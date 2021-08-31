@@ -15,12 +15,12 @@ iv. SkLearn - To import the NLP tool "CountVectorizer".
 
 
 # 2. DataSet
-The dataset of this project is of text type. Data of human, dog and chimpanzee gene are collected as dataset. The data for human has human DNA sequence coding regions and a class labe. Similarly for Chimpanzee and the dog also. 
+The dataset of this project is of text type. Data of human, dog and chimpanzee gene are collected as dataset. The data for human has "human DNA sequence coding regions" and a class label. Similarly for Chimpanzee and the dog also. 
 
 # 3. Data Pre-Processing
-DNA sequence is treated as a “language”, otherwise known as k-mer counting. DNA and protein sequences can be viewed metaphorically as the language of life. The language encodes instructions as well as function for the molecules that are found in all life forms. Here hexamer “words” are used but that is arbitrary and word length can be tuned to suit the particular situation. The word length and amount of overlap need to be determined empirically for any given application. In genomics, we refer to these types of manipulations as “k-mer counting”, or counting the occurrences of each possible k-mer sequence. There are specialized tools for this, but the Python natural language processing tools make it super easy. 
+DNA sequence is treated as a “language”, otherwise known as k-mer counting. DNA and protein sequences can be viewed metaphorically as the language of life. The language encodes instructions as well as function for the molecules that are found in all life forms. Here hexamer “words” are used but that is arbitrary and word length can be tuned to suit the particular situation. The word length and amount of overlap need to be determined empirically for any given application. In genomics, we refer to these types of manipulations as “k-mer counting”, or counting the occurrences of each possible k-mer sequence. There are specialized tools for this, but the Python natural language processing tools make it easy. 
 
-Conversion of training data sequences into short overlapping k-mers of legth 6 is done in this stage. Same is done for each species of data we have using our getKmers function. The coding sequence data is changed to lowercase, split up into all possible k-mer words of length 6. Then, the conversion of the lists of k-mers for each gene into string sentences of words that the count vectorizer can use, is done.
+Conversion of training data sequences into short overlapping k-mers of legth 6 is done in this stage. Same is done for each species of data we have, by using our getKmers function. The coding sequence data is changed to lowercase, split up into all possible k-mer words of length 6. Then, the conversion of the lists of k-mers for each gene into string sentences of words that the count vectorizer can use, is done.
           
  # 4. Visualizing the Dataset - Balanced
 Upon the pre-processing of the data, the datset becomes relatively balanced than previous and hence will be compatible to perform the gene function prediction with better accuracy over it. This visualization is done using the Matplotlib library.
@@ -41,3 +41,6 @@ ii. Precision = 98.429
 iii. Recall = 98.402 
 
 iv. f1 score = 98.403
+
+# 8. Inference
+The model works well over the data and an accuracy of 98.40 is obtained. The model works efficiently over the text data that consists of the DNA code sequence regions with class labels, provided as dataset. Additional text data of several forms of life can be included to increase the dataset and as to make the model perform over several forms of data. The high accuracy of the model infers that the NLP model predicts the gene function well.
