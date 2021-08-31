@@ -43,4 +43,4 @@ iii. Recall = 98.402
 iv. f1 score = 98.403
 
 # 8. Inference
-The model works well over the data and an accuracy of 98.40 is obtained. The model works efficiently over the text data that consists of the DNA code sequence regions with class labels, provided as dataset. Additional text data of several forms of life can be included to increase the dataset and as to make the model perform over several forms of data. The high accuracy of the model infers that the NLP model predicts the gene function well.
+The model works well over the data and an accuracy of 98.40 is obtained. The model works efficiently over the text data that consists of the DNA code sequence regions with class labels, provided as dataset. Additional text data (with same format) of several forms of life can be included to increase the dataset and as to make the model perform over several life forms (animals etc) of data. The high accuracy of the model infers that the NLP model predicts the gene function well.
